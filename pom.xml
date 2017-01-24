@@ -10,7 +10,7 @@
     <groupId>com.feth</groupId>
     <artifactId>mailfred-appengine</artifactId>
 
-        <pluginRepositories>
+    <pluginRepositories>
         <pluginRepository>
             <id>google-staging</id>
             <name>Google Staging</name>
@@ -20,8 +20,11 @@
 
     <properties>
         <appengine.app.version>1</appengine.app.version>
-        <appengine.target.version>1.9.17</appengine.target.version>
+        <appengine.target.version>1.9.48</appengine.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- App Engine Standard currently requires Java 7 -->
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.7</maven.compiler.source>
     </properties>
 
     <dependencies>
